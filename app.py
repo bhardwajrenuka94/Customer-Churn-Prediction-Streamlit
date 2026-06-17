@@ -1,6 +1,6 @@
 # app.py
 # Customer Churn Prediction Dashboard
-# Real Telco Dataset | Random Forest | AUC ~ 0.83
+# Real Telco Dataset | Random Forest | AUC ~ 0.84
 # Built by: Renuka Bhardwaj | Data Scientist | AnalytixLabs Certified
 
 import streamlit as st
@@ -163,7 +163,7 @@ with st.sidebar:
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("""<div class='kpi-card'>
-          <div class='kpi-val'>0.83</div>
+          <div class='kpi-val'>0.84</div>
           <div class='kpi-lbl'>AUC-ROC</div>
         </div>""", unsafe_allow_html=True)
     with c2:
@@ -421,7 +421,7 @@ if predict_btn:
       Contract: <b style='color:#00e5ff'>{contract_label}</b> &nbsp;|&nbsp;
       Monthly: <b style='color:#00e5ff'>${MonthlyCharges}</b> &nbsp;|&nbsp;
       Risk: <b style='color:{color}'>{risk}</b> &nbsp;|&nbsp;
-      Model: Random Forest · AUC=0.83
+      Model: Random Forest · AUC=0.84
     </div>
     """, unsafe_allow_html=True)
 
